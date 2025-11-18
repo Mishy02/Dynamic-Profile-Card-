@@ -1,0 +1,76 @@
+/* Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #3a0072, #120026);
+}
+
+/* Profile Card */
+#profileCard {
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 0 25px rgba(170,0,255,0.4);
+    animation: fade 1s ease;
+    transition: .3s;
+}
+
+/* Active Glow */
+.active-status {
+    box-shadow: 0 0 35px rgba(220,128,255,.9);
+}
+
+/* Image */
+#profileCard img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 3px solid rgba(255,255,255,0.4);
+    box-shadow: 0 0 18px rgba(200,0,255,0.6);
+}
+
+/* Text */
+#profileName { 
+    color: #e7c9ff;
+    font-size: 24px;
+    text-shadow: 0 0 6px rgba(200,0,255,.7); 
+}
+
+#profileRole { color: #caa0ff; }
+#profileBio  { color: #e4d0ff; font-size: 14px; }
+
+/* Buttons */
+button {
+    padding: 12px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a00ff, #b300ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(170,0,255,.6);
+    transition: .25s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #9b2cff, #d55bff);
+    box-shadow: 0 0 20px rgba(220,128,255,1);
+    transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fade {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
